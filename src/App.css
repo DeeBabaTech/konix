@@ -1,0 +1,22 @@
+.slideshow-container {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slideshow-image-container {
+  display: flex;
+  position: relative;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+}
+
+.slideshow-image {
+  flex: 0 0 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slideshow-image.active {
+  transform: translateX(-100%);
+}
